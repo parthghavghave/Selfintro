@@ -1,0 +1,175 @@
+<!-- index.html-->
+
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4, .bgimg-5{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://images.pexels.com/photos/1040499/pexels-photo-1040499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 500px;
+}
+
+.bgimg-2 {
+  background-image: url("https://images.pexels.com/photos/4316/technology-computer-chips-gigabyte.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  min-height: 400px;
+}
+.bgimg-5 {
+  background-image: url("https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  min-height: 400px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3,  .bgimg-4, .bgimg-5{
+    background-attachment: scroll;
+  }
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+</style>
+
+    <body>
+  <div class="bgimg-1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">Parth S Ghavghave<br><h6>Programmer | Game Addicted | Student  </h6></span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Know Me</h3>
+    I am Parth, currently persuing BE Information Technology at <a href="https://ghrce.raisoni.net/" target="_blank">G.H.Raisoni College Of Engneering, Nagpur.</a> I am a
+        <a href="https://www.lexico.com/definition/philomath" target="_blank"><font color="#76cae9"><strong>Philomath.</strong></font></a>
+        Like to travel and long drives, while in locked  I like to listen music.
+
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border">SKILLS</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
+  <p> Python | JAVA | C | C++ | SQL | Database Management | Operating System</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border">Education</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align: -moz-left;padding:50px 80px;text-align: center;">
+          <li>G.H.Raisoni College Of Engneering, Nagpur<br><p>- BE Information Technology</p></li>
+          <li>Dharempeth M.P.Deo Science Memorial College<br><p>- HSC</p></li>
+          <li>Somalwar High School, Ramdaspeth, Nagpur<br><p>- SSC</p></li>
+  </div>
+</div>
+  <div class="bgimg-4">
+  <div class="caption">
+  <span class="border">Languages</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align: -moz-left;padding:50px 80px;text-align: center;">
+          Marathi | Hindi | English
+  </div>
+</div>
+  <div class="bgimg-5">
+  <div class="caption">
+  <span class="border">Connect Me</span>
+  </div>
+</div>
+
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align: -moz-left;padding:50px 80px;text-align: center;">
+        <style>
+.fa-facebook, .fa-twitter, .fa-google, .fa-linkedin, .fa-instagram{
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+</style>
+
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/PGhavghave" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/in/parth-ghavghave-b7828718a/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/parth.ghavghave/" class="fa fa-instagram"></a>
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+<!-- findme.html-->
+{% extends "base.html" %}
+{% block title %}Find me{% endblock %}
+{% block body %}
+<div class="jumbotron">
+<style>
+     .hero-image {
+  background-image: url("https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+     .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+     h1 {color: ghostwhite;}
+</style>
+     <div class="hero-image">
+           <div class="hero-text">
+
+<h1>Let's Talk</h1>
+<h3>Follow me on -</h3>
+<ul>
+    <li>Instagram</li>
+    <li>Gmail</li>
+    <li>LinkedIn</li>
+</ul>
+</div>
+     </div>
+</div>
+{% endblock %}

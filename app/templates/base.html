@@ -1,0 +1,46 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+        <title>{% block title %}{% endblock %}</title>
+
+
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+<div class="container">
+      <div class="header clearfix">
+         <div class="w3-container">
+ <div class="w3-dropdown-hover">
+    <button class="w3-button w3-black"><i class="fa fa-bars w3-large"></i></button>
+     <div class="w3-dropdown-content w3-bar-block w3-card w3-light-grey" id="myDIV">
+      <input class="w3-input w3-padding" type="text" placeholder="Search.." id="myInput" onkeyup="myFunction()">
+
+         <a href="/" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+            <a href="/about" class="w3-bar-item w3-button"><i class="fa fa-fw fa-user"></i> Discover</a>
+            <a href="/certificates" class="w3-bar-item w3-button"><i class="fa fa-fw fa-envelope"></i>Certifications</a>
+         <a href="/findme" class="w3-bar-item w3-button"><i class="fa fa-fw fa-envelope"></i> Find me</a>
+  </div></ul>
+      </div>
+
+      {% block body %}
+      {% endblock %}
+
+      <footer class="footer">
+         <br><br> Contact Details: +91 9370714344
+          <br>Email:<a href="mailto:parth.ghavghave@gmail.com"> parth.ghavghave@gmail.com</a>
+
+
+
+       <br><br><p>© 2020 Parth Ghavghave</p>
+      </footer>
+    </div>
+  </body>
+</html>

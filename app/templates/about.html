@@ -1,0 +1,135 @@
+<!-- about.html-->
+
+{% extends "base.html" %}
+{% block title %}Discover{% endblock %}
+{% block body %}
+<div class="jumbotron">
+<style>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4, .bgimg-5{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 500px;
+}
+
+.bgimg-2 {
+  background-image: url("https://images.pexels.com/photos/459277/pexels-photo-459277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 400px;
+}
+.bgimg-5 {
+  background-image: url("https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  min-height: 400px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-5 {
+    background-attachment: scroll;
+  }
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+</style>
+
+    <div class="bgimg-1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">Hii..<br><h6>You can learn more about me here.</h6></span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">I Think....</h3>
+    <p>Universe is pretty big place,if it's just us seems like an awful waste of space</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border">Strengths</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
+   Astrophile | Philomath | Fast Learner | Leadership | Good Convencer
+  </div>
+</div>
+  <div class="bgimg-5">
+  <div class="caption">
+  <span class="border">Connect Me</span>
+  </div>
+</div>
+
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align: -moz-left;padding:50px 80px;text-align: center;">
+        <style>
+.fa-facebook, .fa-twitter, .fa-google, .fa-linkedin, .fa-instagram{
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+</style>
+
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/PGhavghave" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/in/parth-ghavghave-b7828718a/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/parth.ghavghave/" class="fa fa-instagram"></a>
+  </div>
+</div>
+
+{% endblock %}
